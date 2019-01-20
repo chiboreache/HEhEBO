@@ -1,3 +1,2 @@
 
-
-# [`URL`](/build/nechego.html)
+# [`URL`](https://chiboreache.github.io/HEhEBO/build/nechego.html)
