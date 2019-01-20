@@ -1,0 +1,41 @@
+@import __mixins
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great')
+
+.under_the_card-2ch
+  position absolute
+  font-family: 'Fredericka the Great', cursive;
+  text-align center
+
+#str4
+  rdu(78,40,)
+  font-size 5.5rem
+#str5
+  rdu(122,21)
+  font-size 6rem
+#str6
+  rdu(30,47)
+  font-size 5.2rem
+
+.card-2ch
+  hw(100)
+  background #F69E33
+  &__content
+    transition 2s
+    transform-origin top left 4rem
+    ddd()
+    hw(100)
+    ~/:hover &
+      yaw(-.235)
+    &--1
+      hw(100)
+      rdu(,,)
+    &--2
+      hw(100)
+      rdu(,-100,1.9)
+      background #FF7922
+      box-shadow inset 352px 0px 0 0 #F69E33
+      // box-shadow inset 352px 0px 0 0 sandybrown
+    &--3
+      hw(100)
+      rdu(,-200,4)
+      background white

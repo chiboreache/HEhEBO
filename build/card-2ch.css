@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great");
+.under_the_card-2ch {
+  position: absolute;
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+}
+#str4 {
+  transform: translate3d(78%, 40%, 0rem);
+  font-size: 5.5rem;
+}
+#str5 {
+  transform: translate3d(122%, 21%, 0rem);
+  font-size: 6rem;
+}
+#str6 {
+  transform: translate3d(30%, 47%, 0rem);
+  font-size: 5.2rem;
+}
+.card-2ch {
+  height: 100%;
+  width: 100%;
+  background: #f69e33;
+}
+.card-2ch__content {
+  transition: 2s;
+  transform-origin: top left 4rem;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+.card-2ch:hover .card-2ch__content {
+  transform: rotateY(-0.235turn);
+}
+.card-2ch__content--1 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, 0%, 0rem);
+}
+.card-2ch__content--2 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, -100%, 1.9rem);
+  background: #ff7922;
+  box-shadow: inset 352px 0px 0 0 #f69e33;
+}
+.card-2ch__content--3 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, -200%, 4rem);
+  background: #fff;
+}

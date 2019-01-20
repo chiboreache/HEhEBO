@@ -1,0 +1,44 @@
+@import __mixins
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC')
+
+body
+  hw(100)
+  background white
+  display inline-block
+  margin 0
+  padding 0
+
+wi = calc(87vw/3)
+
+.container
+  padding 3em
+  gc()
+  .grid
+    display grid
+    grid-gap 2em
+    grid-template 'c1 c2 c3' 180px \
+                  'ti ti ti' 180px \
+                  'c7 c8 c9' 180px \/\
+                   wi wi wi
+    &__ceil--title
+      gc()
+      grid-area ti
+      font-family 'Amatic SC', cursive
+      font-size 4.5rem
+      text-align center
+      p
+        width 35%
+    [class|='grid__ceil']
+      gc()
+    &__ceil-1
+      grid-area c1
+    &__ceil-2
+      grid-area c2
+    &__ceil-3
+      grid-area c3
+    &__ceil-7
+      grid-area c7
+    &__ceil-8
+      grid-area c8
+    &__ceil-9
+      grid-area c9

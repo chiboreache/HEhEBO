@@ -1,0 +1,51 @@
+whp(w,h=w)
+  height ((h)%)
+  width ((w)%)
+
+hw(w,h=w)
+  height ((h)%)
+  width ((w)%)
+
+hwv(h,w=h)
+  height (h)vh
+  width (w)vw
+
+gc()
+  display grid
+  place-items center
+
+ddd()
+  transform-style preserve-3d
+d3()
+  transform-style preserve-3d
+
+rdu(x=0,y=0,z=0)
+  transform translate3d((x)%,(y)%,(z)rem)
+
+right(x)
+  transform translateX((x)%)
+down(y)
+  transform translateY((y)%)
+up(z)
+  transform translateZ((z)rem)
+
+rt(x=0,y=0,z=0,t=0)
+  transform rotate3d((x),(y),(z),(t)turn)
+rd(x=0,y=0,z=0,d=0)
+  transform rotate3d((x),(y),(z),(d)deg)
+
+rotx(x)
+  transform rotateX((x)turn)
+roty(y)
+  transform rotateY((y)turn)
+rotz(z)
+  transform rotateZ((z)turn)
+
+pitch(x)
+  transform rotateX((x)turn)
+yaw(y)
+  transform rotateY((y)turn)
+roll(z)
+  transform rotateZ((z)turn)
+
+// transform: skew(30deg, 20deg);

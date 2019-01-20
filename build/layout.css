@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 3em;
+  display: grid;
+  place-items: center;
+}
+.container .grid {
+  display: grid;
+  grid-gap: 2em;
+  grid-template: 'c1 c2 c3' 180px 'ti ti ti' 180px 'c7 c8 c9' 180px/calc(87vw / 3) calc(87vw / 3) calc(87vw / 3);
+}
+.container .grid__ceil--title {
+  display: grid;
+  place-items: center;
+  grid-area: ti;
+  font-family: 'Amatic SC', cursive;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.container .grid__ceil--title p {
+  width: 35%;
+}
+.container .grid [class|='grid__ceil'] {
+  display: grid;
+  place-items: center;
+}
+.container .grid__ceil-1 {
+  grid-area: c1;
+}
+.container .grid__ceil-2 {
+  grid-area: c2;
+}
+.container .grid__ceil-3 {
+  grid-area: c3;
+}
+.container .grid__ceil-7 {
+  grid-area: c7;
+}
+.container .grid__ceil-8 {
+  grid-area: c8;
+}
+.container .grid__ceil-9 {
+  grid-area: c9;
+}

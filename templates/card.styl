@@ -1,0 +1,50 @@
+@import __mixins
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker')
+
+.under_the_card
+  position absolute
+  font-family 'Gloria Hallelujah', cursive
+  font-size 3rem
+  text-align center
+
+#str1
+  rdu(75,50)
+#str2
+  rdu(50,40)
+#str3
+  rdu(39,36)
+
+f,r,h,p
+  display inline-block
+f
+  rt(,1,,.5)
+  margin: 5px
+r
+  rt(1, 0.03, 0, 0.5)
+h
+  rdu(64,,)
+
+.card
+  hw(100)
+  background whitesmoke
+  box-shadow inset 0px 0px 20px 0px black
+  &__content
+    transition 2s
+    transform-origin top left 4rem
+    ddd()
+    hw(100)
+    ~/:hover &
+      yaw(-.235)
+    &--1
+      hw(100)
+      rdu(,,-0)
+      background red
+    &--2
+      hw(100)
+      rdu(,-100,1.9)
+      background blue
+    &--3
+      hw(100)
+      rdu(,-200,4)
+      background white

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker");
+.under_the_card {
+  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+#str1 {
+  transform: translate3d(75%, 50%, 0rem);
+}
+#str2 {
+  transform: translate3d(50%, 40%, 0rem);
+}
+#str3 {
+  transform: translate3d(39%, 36%, 0rem);
+}
+f,
+r,
+h,
+p {
+  display: inline-block;
+}
+f {
+  transform: rotate3d(0, 1, 0, 0.5turn);
+  margin: 5px;
+}
+r {
+  transform: rotate3d(1, 0.03, 0, 0.5turn);
+}
+h {
+  transform: translate3d(64%, 0%, 0rem);
+}
+.card {
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  box-shadow: inset 0px 0px 20px 0px #000;
+}
+.card__content {
+  transition: 2s;
+  transform-origin: top left 4rem;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+.card:hover .card__content {
+  transform: rotateY(-0.235turn);
+}
+.card__content--1 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, 0%, 0rem);
+  background: #f00;
+}
+.card__content--2 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, -100%, 1.9rem);
+  background: #00f;
+}
+.card__content--3 {
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0%, -200%, 4rem);
+  background: #fff;
+}
